@@ -447,6 +447,7 @@ h1{
 .nav-min{
     display: none;
 }
+
                     /* 2-screen */
 .second-screen, .third-screen,
 .fifth-screen{
@@ -633,6 +634,9 @@ h1{
     letter-spacing: 0.02rem;
     margin: 0 25%;
     padding: 15px 45px;
+}
+.btn-fourth-screen-mobil{
+    display: none;
 }
 .fourth-screen-right{
     position: relative;

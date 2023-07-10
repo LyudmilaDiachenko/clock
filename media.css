@@ -74,7 +74,7 @@
     .offer-image{
         width: 260px; 
         height: 425px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 20px;
         top: 45px;
     }    
@@ -145,6 +145,9 @@
     }  
     .card-btn-cart{
         width: 130px;
+    }
+    .card-btn-container {
+        display: block;
     }
     /* 1200 4screen */    
     .title-fourth-screen {
@@ -264,7 +267,7 @@
         width: 195px;
         height: 320px;
         border-radius: 20px;
-        object-fit: cover;
+        object-fit: contain;
         top: 35px;
     }
     .offer-btn{
@@ -736,8 +739,44 @@
         padding: 0 25px;
         margin: 0 auto;
     }
+    .nav-min{
+        margin: 0 0;
+    }
+    .line-menu{
+        width: 35px;
+    }
+    .search-box:hover > .search-input {
+        width: 150px;
+    }
+    .search-input {
+        margin-top: 0;
+    }
+    .modal-container {
+        margin: 0 10px;
+    }
+    .icon-log{
+        display: none;
+    }
     .modal-content{
-        max-width: 340px;
+        max-width: 300px;
+        height: 400px;
+    }
+    .modal-close {
+        padding: 0 10px;
+    }
+    .label-login{
+        padding: 0 0;
+        font-size: 2rem;
+    }
+    .signup-btn, .login-btn {
+        margin: 10px auto;
+        font-size: 0.8em;
+    }
+    .login{
+        transform: translateY(-60px);
+    }
+    #chk:checked ~ .login{
+        transform: translateY(-340px);
     }
     th {
         font-size: 0.9rem;
@@ -835,6 +874,325 @@
     }
     .text-number {
         font-size: 0.9rem;
+    }
+    .home-link{
+        display: none;
+    }
+}
+@media screen and (max-width:360px){
+    .container{
+        width: 100%;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+    header {
+        margin: 25px 0 30px 0;
+    }
+    .part-left{
+        width: 140px;
+    }
+    .title-logo {
+        font-size: 1rem;
+    }
+    .icon-logo-max {
+        width: 25px;
+        height: 25px;
+    }
+    .nav-min{
+        margin: 0 0;
+    }
+    .line-menu{
+        width: 30px;
+    }
+    .slide li {
+        padding: 10px 40px 10px 0;
+    }
+    .search-box:hover > .search-input {
+        width: 120px;
+    }
+    .search-input {
+        margin-top: 0;
+    }
+    .modal-container {
+        margin: 0 10px;
+    }
+    .icon-log{
+        display: none;
+    }
+    .modal-content{
+        max-width: 300px;
+        height: 400px;
+    }
+    .modal-close {
+        padding: 0 10px;
+    }
+    .label-login{
+        padding: 0 0;
+        font-size: 2rem;
+    }
+    .signup-btn, .login-btn {
+        margin: 10px auto;
+        font-size: 0.8em;
+    }
+    .login{
+        transform: translateY(-60px);
+    }
+    #chk:checked ~ .login{
+        transform: translateY(-340px);
+    }
+    .container-cart{
+        padding: 20px;
+    }
+    .title-table{
+        font-size: 1rem;
+    }
+    th {
+        font-size: 0.7rem;
+    }
+    .cart-name{
+        padding: 5px 5px 5px 0;
+    }
+    .name-cart{
+        display: none;
+    }
+    .image-cart {
+        width: 45px;
+        border-radius: 9px;
+    }    
+    .cart-price, .cart-qty, .cart-total{
+        padding: 5px;
+    }
+    .cart-name, .price-cart, .qty-cart, .total-cart{
+        font-size: 0.7rem;
+    }    
+    .cart-btn{
+        padding: 5px 0 5px 5px;
+    }
+    .offer {
+        height: 390px;
+    }       
+    .offer-background{
+        height: 330px;
+        padding: 20px 0 20px 120px;
+    }
+    .arrow-prev {
+        right: 80px;
+    }
+    .arrow-next, .arrow-prev {
+        width: 33px;
+        height: 33px;
+        top: calc(330px - 19px);
+    }
+    h1{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .offer-text{
+        margin: 0 10px 0 0;
+        line-height: 1rem;
+    }
+    .offer-btn{
+        flex-wrap: wrap;
+        margin: 10px 0 0 0;
+    }
+    .link-add,
+    .link-buy{
+        margin: 0 10px 0 0;
+    }
+    .link-add{
+        margin-bottom: 10px;
+    }
+    .link-buy, .link-add{
+        width: 140px;
+    }
+    .icon-logo-min,
+    .icon-cart{
+        margin: 0 9px 0 15px;
+    }
+    .icon-logo-text {
+        font-size: 0.7rem;
+    }
+    .offer-image {
+        width: 130px;
+        top: 5px;
+        position: absolute;
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+    .left-background, .right-background{
+        width: 100%;
+        height: 240px;
+    }
+    .box-title-left, .box-title-right {
+        font-size: 1.2em;
+    }
+    .box-text-right, .box-text-left {
+        font-size: 0.8rem;
+    }
+    .box-title-link-right, .box-title-link-left{
+        font-size: 0.7rem;
+    }
+    .box-text-right {
+        padding: 5px 10px 5px 0;
+    }
+    .box-picture-right, .box-picture-left {
+        width: 190px;
+        height: 85px;
+        bottom: 0;
+        position: absolute;
+        left: calc(100% - 190px);
+    }
+    .second-screen {
+        margin: 0 auto 50px auto;
+    }
+    .third-screen-title {
+        margin-bottom: 90px;
+    }
+    .card {
+        width: 251px;
+        height: 360px;
+        padding: 160px 0 0 40px;
+    }
+    .card-image{
+        width: 155px;
+        height: 165px;
+    }
+    .card-name {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .card-discont, .card-discont-price {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .card-price {
+        font-size: 1rem;
+    }    
+    .fourth-screen{
+        margin-bottom: 50px;
+    }
+    .fourth-screen-container {
+        flex-wrap: wrap;
+    }
+    .fourth-screen-left {
+        width: 100%;
+    }
+    .fourth-screen-right{
+        width: 100%;
+        margin-top: -40px;
+    }
+    .title-fourth-screen {
+        text-align: center;
+        margin-left: 0;
+    }
+    .image-fourth-screen, .fourth-screen-right-bg{
+        height: 260px;
+    }
+    .txt-fourth-screen{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .text-fourth-screen{
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+    .fourth-screen-right-bg {
+        height: 230px;
+        margin-bottom: 60px;
+    }
+    .image-fourth-screen{
+        position: absolute;
+        left: 0;
+        top: 95px;
+        width: 220px;
+        object-fit: contain;
+    }
+    .btn-fourth-screen{
+        display: none;
+    }
+    .btn-fourth-screen-mobil {
+        background-color: #DEF2F1;
+        border-radius: 10px;
+        border: none;
+        font-size: 0.8rem;
+        letter-spacing: 0.02rem;
+        margin: 65px auto 0px;
+        padding: 10px 45px;
+        display: block;
+        height: 40px;
+    }
+    .card-width {
+        margin-right: 0;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .marg-top {
+        margin-top: 0;
+    }
+    .margin-bottom{
+        margin-bottom: 50px;
+    }
+    .title-card {
+        font-size: 1.9rem;
+        margin: 0 auto 30px auto;
+    }
+    .image-card {
+        width: 90px;
+    }
+    .price-card-clock {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .text-card {
+        font-size: 0.9rem;
+    }
+    .card-width{
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .fifth-screen {
+        margin-bottom: 30px;
+    }
+    .sixth-screen {
+        margin-bottom: 60px;
+    }
+    .sixth-screen-container {
+        flex-wrap: wrap;
+    }
+    .sixth-screen-left{
+        height: 200px;
+    }
+    .sixth-screen-right{
+        margin-top: 50px;
+    }
+    .sixth-screen-left,
+    .sixth-screen-right{
+        width: 100%;
+    }
+    .title-sixth-screen-right {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .text-sixth-screen-right {
+        font-size: 0.65rem;
+        line-height: 1rem;
+    }
+    .txt-sixth-screen-right {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-top: 0;
+    }
+    .seventh-screen {
+        margin-bottom: 90px;
+    }
+    footer {
+        padding: 65px 0 50px 0;
+    }
+    .footer-title {
+        font-size: 1.5rem;
+        bottom: -122px;
     }
     .home-link{
         display: none;
